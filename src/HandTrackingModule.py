@@ -11,6 +11,7 @@ class HandDetector():
         
         self.mpHands = mp.solutions.hands
         try:
+            # self.hands = self.mpHands.Hands(self.mode, self.maxHands, self.detectionCon, self.trackCon)
             self.hands = self.mpHands.Hands()
         except Exception as e:
             print(f'error: {e}')
